@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDropzone } from "../hooks/useDnD";
 import { usePizza } from "../context/PizzaContext";
-import Topping from "./Topping";
+import Topping from "./Topping";   // ← default import (matches Topping.jsx)
 import { motion } from "framer-motion";
 
 const PizzaCanvas = () => {
@@ -56,3 +56,4 @@ const PizzaCanvas = () => {
 };
 
 export default PizzaCanvas;
+
