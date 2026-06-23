@@ -2,7 +2,7 @@
     "name": "pizza-delivery",
     "version": "1.0.0",
     "private": true,
-    "homepage": "https://thediaryofastudentleader.github.io/pizza-delivery",
+    "homepage": ".",
     "dependencies": {
         "framer-motion": "^11.0.0",
         "react": "^18.2.0",
