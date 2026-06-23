@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Make sure the root fills the viewport */
+html,
+body,
+#root {
+    height: 100%;
+}
