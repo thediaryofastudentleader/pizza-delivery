@@ -1,20 +1,15 @@
 {
   "builds": [
     {
-      "src": "package.json",          // <-- points to the file at the repo root
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": { "distDir": "build" }
     }
   ],
   "routes": [
-    // Serve JS/CSS and other static assets directly
     { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/(.+)\\.(txt|ico|png|jpg|jpeg|svg|webp|json)$", "dest": "/$1" },
-
-    // Root URL → the built index.html
     { "src": "/$", "dest": "/index.html" },
-
-    // All other client‑side routes fall back to index.html (SPA routing)
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
