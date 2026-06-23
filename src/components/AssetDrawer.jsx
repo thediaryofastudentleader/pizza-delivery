@@ -1,5 +1,5 @@
 import React from "react";
-import { IngredientIcon } from "./IngredientIcon";
+import IngredientIcon from "./IngredientIcon";   // ← default import
 
 const AssetDrawer = () => {
   const items = [
@@ -22,4 +22,3 @@ const AssetDrawer = () => {
 };
 
 export default AssetDrawer;
-
