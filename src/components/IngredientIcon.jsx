@@ -28,4 +28,3 @@ const IngredientIcon = ({ name }) => {
 };
 
 export default IngredientIcon;
-
